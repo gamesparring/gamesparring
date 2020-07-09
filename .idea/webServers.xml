@@ -3,10 +3,11 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="0c42d202-c859-4cec-9c64-29ecbd50d75b" name="game">
-        <fileTransfer rootFolder="/var/www/mywork/gamesparring" accessType="SFTP" host="95.128.182.203" port="22" sshConfigId="04a70164-d546-45ae-83cb-847bd8a7b5a8" sshConfig="root@95.128.182.203:22 password">
+        <fileTransfer host="95.128.182.203" port="22" rootFolder="/var/www/mywork/gamesparring/" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>
+          <option name="port" value="22" />
         </fileTransfer>
       </webServer>
     </option>

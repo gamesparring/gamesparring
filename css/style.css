@@ -321,7 +321,6 @@ header.header-scroll .nav-menu{
 }
 .nav-list li a{
 	font-weight: 700;
-	letter-spacing: 0.05em;
 	position: relative;
 	text-transform:uppercase;
 	line-height:19px;
@@ -550,17 +549,17 @@ header.header-scroll .logo-strong{
 .btn:hover {
 	background-color: #45a7ef;
 }
-.btn:before{
-	content: '';
-	position: absolute;
-	width: 69px;
-	height: 1px;
-	background-color: #fff;
-	top: 50%;
-	right: -44px;
-	z-index: 1;
-	transition: all 0.3s ease-out;
-}
+/*.btn:before{*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	width: 69px;*/
+/*	height: 1px;*/
+/*	background-color: #fff;*/
+/*	top: 50%;*/
+/*	right: -44px;*/
+/*	z-index: 1;*/
+/*	transition: all 0.3s ease-out;*/
+/*}*/
 .btn:hover:before{
 	right: -80px;
 	opacity: 0;
