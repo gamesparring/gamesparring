@@ -80,19 +80,18 @@
 							<a href="index.html">ГЛАВНАЯ</a>
 						</li>
 						<li>
-							<a href="about.html">О НАС</a>
+							<a href="#">О НАС</a>
 						</li>
 						<li class="dropdown">
 							<a href="#">Ещё <i class="fa fa-angle-down" aria-hidden="true"></i></a>
 							<ul>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="blog.html">News</a></li>
-								<li><a href="pravicy-policy.html">Pravicy policy</a></li>
+								<li><a href="#">Наш сервис</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Политика конфиденциальности</a></li>
 							</ul>
 						</li>
-						<li><a href="shop.html">Турниры</a></li>
-						<li><a href="gallery.html">Галерея</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
+						<li><a href="#">Турниры</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</nav>
 				<!--=========== NAV MENU END ===========-->
@@ -166,8 +165,8 @@
 				</div>
 				<div class="main-slide-for">
 					<picture>
-						<source srcset="img/bg-ranks.webp" type="image/webp">
-						<img src="img/bg-ranks.jpg" alt="Pubg retro">
+						<source srcset="img/pubg_retro.webp" type="image/webp">
+						<img src="img/pubg_retro.jpg" alt="Pubg retro">
 					</picture>
 					<div class="container">
 						<div class="slide-info">
@@ -212,7 +211,7 @@
 				<div class="main-slide-nav">
 					<span>3</span>
 					<div class="img-cover">
-						<img src="img/bg-ranks-mini.webp" alt="Pubg Retro">
+						<img src="img/pubg_retro_min.webp" alt="Pubg Retro">
 					</div>
 				</div>
 				<div class="main-slide-nav">
@@ -241,13 +240,17 @@
 				<div class="col-12 col-md-6">
 					<div class="price-info">
 						<h2 class="title-left">Ближайший турнир</h2>
-						<ul>
-							<p>Начало матча</p>
-							<li class="cards">Завтра - 18:00</li>
-							<p>Участников </p>
-							<li class="cards">5/100 </li>
-						</ul>
-						<p>ЭРАНГЕЛЬ - SOLO TPP</p>
+						<div class="price-info-match">
+							<div class="price-match-start">
+								<label for="MatchStart">Начало матча</label>
+								<div id="MatchStart" class="PriceInfo" >Завтра - 18:00</div>
+							</div>
+							<div class="price-match-start">
+								<label for="Participant">Участников</label>
+								<div id="Participant" class="PriceInfo" >5/100</div>
+							</div>
+						</div>
+						<p class="pt-4">ЭРАНГЕЛЬ - SOLO TPP</p>
 						<ul>
 							<li>Попади в ТОП 15 и получи +100 рублей.</li>
 						</ul>
@@ -262,7 +265,7 @@
 
 	<!--================ GALLERY BLOCK ================-->
 	<section class="serv-block">
-		<div href="services.html" class="serv-block-item">
+		<div href="#" class="serv-block-item">
 			<span class="border-item"></span>
 			<picture>
 				<source srcset="img/t1.webp" type="image/webp">
@@ -272,10 +275,10 @@
 				<h4>11.07.2020 - 19:00</h4>
 				<h5>Эрангель - SQUAD TPP</h5>
 					<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@piska">Учавствовать</button>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t1">Учавствовать</button>
 			</div>
 		</div>
-		<a href="services.html" class="serv-block-item">
+		<a href="#" class="serv-block-item">
 			<span class="border-item"></span>
 			<picture>
 				<source srcset="img/t2.webp" type="image/webp">
@@ -285,10 +288,10 @@
 				<h4>11.07.2020 - 19:00</h4>
 				<h5>Эрангель - SQUAD TPP</h5>
 				<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@piska">Учавствовать</button>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t2">Учавствовать</button>
 			</div>
 		</a>
-		<a href="services.html" class="serv-block-item">
+		<a href="#" class="serv-block-item">
 			<span class="border-item"></span>
 			<picture>
 				<source srcset="img/t3.webp" type="image/webp">
@@ -298,10 +301,10 @@
 				<h4>11.07.2020 - 19:00</h4>
 				<h5>Эрангель - SQUAD TPP</h5>
 				<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@piska">Учавствовать</button>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t3">Учавствовать</button>
 			</div>
 		</a>
-		<a href="services.html" class="serv-block-item">
+		<a href="#" class="serv-block-item">
 			<span class="border-item"></span>
 			<picture>
 				<source srcset="img/t4.webp" type="image/webp">
@@ -311,10 +314,46 @@
 				<h4>11.07.2020 - 19:00</h4>
 				<h5>Эрангель - SQUAD TPP</h5>
 				<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
-				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@piska">Учавствовать</button>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t4">Учавствовать</button>
 			</div>
 		</a>
 	</section>
+	<!-- modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Зарегистрироваться</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+							<input id="TurnirId" hidden>
+						<div class="form-group">
+							<label for="NickName" class="col-form-label">Nick Name:</label>
+							<input type="text" class="form-control" id="NickName">
+						</div>
+						<div class="form-group">
+							<label for="PubgId" class="col-form-label">Pubg Id:</label>
+							<input type="text" class="form-control" id="PubgId">
+						</div>
+						<div class="form-group">
+							<label for="message-text" class="col-form-label">Message:</label>
+							<textarea class="form-control" id="message-text"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-primary">Участвовать
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end modal -->
 	<!--============== GALLERY BLOCK END ==============-->
 
 	<!--==================== S-BLOG ====================-->
@@ -326,7 +365,7 @@
 				<!--=============== POST-ITEM ===============-->
 				<div class="col-12 col-md-4 post-item">
 					<div class="prod-thumbnail">
-						<a href="blog.html">
+						<a href="#">
 							<picture>
 								<source srcset="img/n1.webp" type="image/webp">
 								<img class="lazy" src="img/n1.jpg" data-src="img/blog-img-1.jpg" alt="img">
@@ -338,7 +377,7 @@
 							<span class="post-by">От <a href="#">Иван Иванов</a>  /</span>
 							<span class="post-date">Сентябрь 2019</span>
 						</div>
-						<h5 class="title"><a href="blog.html">Краткое описание/оглавление статьи
+						<h5 class="title"><a href="#">Краткое описание/оглавление статьи
 						</a></h5>
 						<div class="meta bottom">
 								<span class="post-comments">
@@ -346,14 +385,14 @@
 								</span>
 							<span class="post-tags">Тэг: <a href="#">Pubg</a></span>
 						</div>
-						<a href="blog.html" class="btn">Просмотреть</a>
+						<a href="#" class="btn">Просмотреть</a>
 					</div>
 				</div>
 				<!--============= POST-ITEM END =============-->
 				<!--=============== POST-ITEM ===============-->
 				<div class="col-12 col-md-4 post-item">
 					<div class="prod-thumbnail">
-						<a href="blog.html">
+						<a href="#">
 							<picture>
 								<source srcset="img/n2.webp" type="image/webp">
 								<img class="lazy" src="img/n2.jpg" data-src="img/blog-img-1.jpg" alt="img">
@@ -365,21 +404,21 @@
 							<span class="post-by">От <a href="#">Иван Иванов</a>  /</span>
 							<span class="post-date">Сентябрь 2019</span>
 						</div>
-						<h5 class="title"><a href="blog.html">Краткое описание/оглавление статьи</a></h5>
+						<h5 class="title"><a href="#">Краткое описание/оглавление статьи</a></h5>
 						<div class="meta bottom">
 								<span class="post-comments">
 									<a href="#">Комментариев 2</a>
 								</span>
 							<span class="post-tags">Тэг: <a href="#">Pubg </a><a href="#">Drones</a></span>
 						</div>
-						<a href="blog.html" class="btn">Просмотреть</a>
+						<a href="#" class="btn">Просмотреть</a>
 					</div>
 				</div>
 				<!--============= POST-ITEM END =============-->
 				<!--=============== POST-ITEM ===============-->
 				<div class="col-12 col-md-4 post-item">
 					<div class="prod-thumbnail">
-						<a href="blog.html">
+						<a href="#">
 							<picture>
 								<source srcset="img/n3.webp" type="image/webp">
 								<img class="lazy" src="img/n3.jpg" data-src="img/blog-img-1.jpg" alt="img">
@@ -391,14 +430,14 @@
 							<span class="post-by">От <a href="#">Иван Иванов</a>  /</span>
 							<span class="post-date">Сентябрь 2019</span>
 						</div>
-						<h5 class="title"><a href="blog.html">Краткое описание/оглавление статьи</a></h5>
+						<h5 class="title"><a href="#">Краткое описание/оглавление статьи</a></h5>
 						<div class="meta bottom">
 								<span class="post-comments">
 									<a href="#">Комментариев 2</a>
 								</span>
 							<span class="post-tags">Тэг: <a href="#">Pubg, </a><a href="#">Drones</a></span>
 						</div>
-						<a href="blog.html" class="btn">Просмотреть</a>
+						<a href="#" class="btn">Просмотреть</a>
 					</div>
 				</div>
 				<!--============= POST-ITEM END =============-->
@@ -427,30 +466,12 @@
 							<h6>Фраги</h6>
 						</div>
 					</li>
-<!--					<li class="item" rel="tab3">-->
-<!--						<div class="block-icon">-->
-<!--							<img src="img/icon-tab-3.svg" alt="img">-->
-<!--							<h6>Ктегория 3</h6>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class="item" rel="tab4">-->
-<!--						<div class="block-icon">-->
-<!--							<img src="img/icon-tab-4.svg" alt="img">-->
-<!--							<h6>Ктегория 4</h6>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class="item" rel="tab5">-->
-<!--						<div class="block-icon">-->
-<!--							<img src="img/icon-tab-5.svg" alt="img">-->
-<!--							<h6>Ктегория 5</h6>-->
-<!--						</div>-->
-<!--					</li>-->
-<!--					<li class="item" rel="tab6">-->
-<!--						<div class="block-icon">-->
-<!--							<img src="img/icon-tab-6.svg" alt="img">-->
-<!--							<h6>Ктегория 6</h6>-->
-<!--						</div>-->
-<!--					</li>-->
+					<li class="item" rel="tab3">
+						<div class="block-icon">
+							<img src="img/match.svg" alt="img">
+							<h6>Сыграно</h6>
+						</div>
+					</li>
 				</ul>
 				<div class="tabs-content">
 					<!--================== TAB1 ==================-->
@@ -462,20 +483,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-1.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Inspire pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
+										<span class="old-price">Заработал</span>
+										<span class="new-price">299 &#8381;</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -485,19 +508,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-2.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Pro with</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">599$</span>
+										<span class="old-price">Заработал</span>
+										<span class="new-price">299 &#8381;</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -507,19 +533,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-3.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Hasselblad</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">499$</span>
+										<span class="old-price">Заработал</span>
+										<span class="new-price">299 &#8381;</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -529,20 +558,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-4.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 zoom</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
+										<span class="old-price">Заработал</span>
+										<span class="new-price">299 &#8381;</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -552,19 +583,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-5.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">599$</span>
+										<span class="old-price">Заработал</span>
+										<span class="new-price">299 &#8381;</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -574,21 +608,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-6.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-<!--											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>-->
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-<!--											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>-->
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Phantom 4 Pro</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">499$</span>
+										<span class="old-price">Заработал</span>
+										<span class="new-price">299 &#8381;</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -604,20 +639,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-4.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 zoom</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
+										<span class="old-price">Килов</span>
+										<span class="new-price">100</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -627,19 +664,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-5.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">599$</span>
+										<span class="old-price">Килов</span>
+										<span class="new-price">100</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -649,19 +689,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-6.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Phantom 4 Pro</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">499$</span>
+										<span class="old-price">Килов</span>
+										<span class="new-price">100</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -671,20 +714,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-1.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Inspire pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
+										<span class="old-price">Килов</span>
+										<span class="new-price">100</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -694,19 +739,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-2.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Pro with</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">599$</span>
+										<span class="old-price">Килов</span>
+										<span class="new-price">100</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -716,19 +764,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-3.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Hasselblad Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">499$</span>
+										<span class="old-price">Килов</span>
+										<span class="new-price">100</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -744,20 +795,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-1.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Inspire pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
+										<span class="old-price">Сыграно</span>
+										<span class="new-price">20 Игр</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -767,19 +820,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-2.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Pro with</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">599$</span>
+										<span class="old-price">Сыграно</span>
+										<span class="new-price">20 Игр</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -789,19 +845,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-3.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Hasselblad Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">499$</span>
+										<span class="old-price">Сыграно</span>
+										<span class="new-price">20 Игр</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -811,20 +870,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-4.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 zoom</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
+										<span class="old-price">Сыграно</span>
+										<span class="new-price">20 Игр</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -834,19 +895,22 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-5.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">599$</span>
+										<span class="old-price">Сыграно</span>
+										<span class="new-price">20 Игр</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
@@ -856,483 +920,28 @@
 									<div class="prod-img">
 										<div class="lable lable-new">new</div>
 										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-6.jpg" alt="img">
+										<picture>
+											<source srcset="img/stalker.webp" type="image/webp">
+											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">
+										</picture>
 										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
+											<li><a href="#"></a></li>
 										</ul>
 									</div>
 								</div>
 								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Phantom 4 Pro</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
+									<h5 class="title"><a href="#">Иванов Иван</a></h5>
 									<div class="price">
-										<span class="new-price">499$</span>
+										<span class="old-price">Сыграно</span>
+										<span class="new-price">20 Игр</span>
 									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
+									<a href="#" class="btn">Посмотреть</a>
 								</div>
 							</div>
 							<!-- prod-item end -->
 						</div>
 					</div>
 					<!--================ TAB3 END ================-->
-					<!--================== TAB4================== -->
-					<div class="tab tab4">
-						<div class="row prod-cover">
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-4.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 zoom</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-5.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">599$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-6.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Phantom 4 Pro</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">499$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-1.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Inspire pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-2.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Pro with</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">599$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-3.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Hasselblad Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">499$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-						</div>
-					</div>
-					<!--================ TAB4 END ================-->
-					<!--================== TAB5 ==================-->
-					<div class="tab tab5">
-						<div class="row prod-cover">
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-1.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Inspire pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-2.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Pro with</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">599$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-3.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Hasselblad Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">499$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-4.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 zoom</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-5.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">599$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-6.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Phantom 4 Pro</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">499$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-						</div>
-					</div>
-					<!--================ TAB5 END ================-->
-					<!--================== TAB6 ==================-->
-					<div class="tab tab6">
-						<div class="row prod-cover">
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-4.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 zoom</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-5.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">599$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-6.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Phantom 4 Pro</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">499$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-1.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Inspire pro Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="old-price">399$</span>
-										<span class="new-price">299$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-2.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Pro with</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">599$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-							<!-- prod-item -->
-							<div class="col-12 col-sm-6 col-md-4 prod-item">
-								<div class="prod-thumbnail">
-									<div class="prod-img">
-										<div class="lable lable-new">new</div>
-										<div class="lable lable-sale">sale</div>
-										<img class="lazy" src="img/placeholder-all.png" data-src="img/prod-3.jpg" alt="img">
-										<ul class="prod-link-cover">
-											<li><a href="shop-single.html"><i class="fa fa-link" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
-											<li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></li>
-										</ul>
-									</div>
-								</div>
-								<div class="prod-content">
-									<h5 class="title"><a href="shop-single.html">Mavic 2 Hasselblad Camera</a></h5>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et</p>
-									<div class="price">
-										<span class="new-price">499$</span>
-									</div>
-									<a href="shop-single.html" class="btn">buy now</a>
-								</div>
-							</div>
-							<!-- prod-item end -->
-						</div>
-					</div>
-					<!--================ TAB6 END ================-->
 				</div>
 			</div>
 			<!--================ TAB-WRAP END ================-->
@@ -1344,23 +953,16 @@
 	<!--=================== S-CONTACTS ===================-->
 	<section class="s-contacts s-main-contacts">
 		<div class="container s-anim">
-			<h2>Contact us</h2>
-			<p class="slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+			<h2>КОНТАКТЫ</h2>
 			<form id='contactform' action="php/contact.php" name="contactform">
 				<ul class="form-cover">
-					<li class="inp-name"><input id="name" type="text" name="your-name" placeholder="Name"></li>
-					<li class="inp-phone"><input id="phone" type="tel" name="your-phone" placeholder="Phone"></li>
+					<li class="inp-name"><input id="name" type="text" name="your-name" placeholder="Имя"></li>
+					<li class="inp-phone"><input id="phone" type="tel" name="your-phone" placeholder="Телефон"></li>
 					<li class="inp-email"><input id="email" type="email" name="your-email" placeholder="E-mail"></li>
-					<li class="inp-text"><textarea id="comments" name="your-text" placeholder="Message"></textarea></li>
+					<li class="inp-text"><textarea id="comments" name="your-text" placeholder="Сообщение"></textarea></li>
 				</ul>
-				<div class="checkbox-wrap">
-					<div class="checkbox-cover">
-						<input type="checkbox">
-						<p>By using this form you agree with the storage and handling of your data by this website.</p>
-					</div>
-				</div>
 				<div class="btn-form-cover">
-					<button id="#submit" type="submit" class="btn">submit comment</button>
+					<button id="#submit" type="submit" class="btn">Отправить</button>
 				</div>
 			</form>
 			<div id="message"></div>
@@ -1372,64 +974,39 @@
 
 <!--======================= FOOTER =======================-->
 <footer>
-<!--	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-whatever="@piska">-->
-<!--		<div class="modal-dialog">-->
-<!--			<div class="modal-content">-->
-<!--				<div class="modal-header">-->
-<!--					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
-<!--					<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
-<!--						<span aria-hidden="true">&times;</span>-->
-<!--					</button>-->
-<!--				</div>-->
-<!--				<div class="modal-body">-->
-<!--					...-->
-<!--				</div>-->
-<!--				<div class="modal-footer">-->
-<!--					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-<!--					<button type="button" class="btn btn-primary">Save changes</button>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
 	<div class="container">
 		<div class="row">
 			<div class="col-12 col-sm-6 col-lg-3 footer-info">
-				<h5>about us</h5>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				<h5>О НАС</h5>
+				<p>Game Sparring – киберспортивный проект, на острие мобильных соревнований!</p>
 			</div>
 			<div class="col-6 col-sm-4 col-lg-2 blok-link">
-				<h5>Shop</h5>
+				<h5>ТУРНИР</h5>
 				<ul>
-					<li><a href="#">DJI</a></li>
-					<li><a href="#">Parrot</a></li>
-					<li><a href="#">Hubsan</a></li>
-					<li><a href="#">Mi</a></li>
+					<li><a href="#">Турнир 1</a></li>
+					<li><a href="#">Турнир 2</a></li>
+					<li><a href="#">Турнир 3</a></li>
+					<li><a href="#">Турнир 4</a></li>
 				</ul>
 			</div>
 			<div class="col-6 col-sm-4 col-lg-2 blok-link">
-				<h5>discount</h5>
+				<h5>НОВОСТИ</h5>
 				<ul>
-					<li><a href="#">lorem ipsum</a></li>
-					<li><a href="#">dolor sit amet</a></li>
-					<li><a href="#">tempor incididunt</a></li>
-					<li><a href="#">enim ad minim</a></li>
+					<li><a href="#">Новость 1</a></li>
+					<li><a href="#">Новость 2</a></li>
+					<li><a href="#">Новость 3</a></li>
+					<li><a href="#">Новость 4</a></li>
 				</ul>
 			</div>
 			<div class="col-12 col-sm-4 col-lg-2 blok-link">
-				<h5>support</h5>
+				<h5>Поддержка</h5>
 				<ul>
 					<li><a href="#">Help</a></li>
-					<li><a href="#">Documentation</a></li>
-					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
 				</ul>
 			</div>
-			<div class="col-12 col-sm-6 col-lg-3 footer-subscribe">
-				<h5>subscribe</h5>
-				<form action="/" class="subscribe-form">
-					<input type="email" name="subscribe" placeholder="E-mail">
-					<input type="submit" value="send">
-				</form>
-			</div>
+
 		</div>
 		<div class="footer-bottom">
 			<div class="row align-items-center">
@@ -1438,33 +1015,32 @@
 				</div>
 				<div class="col-12 col-md-6">
 					<ul class="footer-menu">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="services.html">Sevices</a></li>
-						<li><a href="shop.html">Shop</a></li>
-						<li><a href="gallery.html">Gallery</a></li>
-						<li><a href="contacts.html">Contacts</a></li>
+						<li><a href="index.html">ГЛАВНАЯ</a></li>
+						<li><a href="#">О НАС</a></li>
+						<li><a href="#">Турниры</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="col-12 col-md-3">
 					<ul class="soc-link">
-						<li><a target="_blank" href="https://www.facebook.com/rovadex"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a target="_blank" href="https://www.instagram.com/rovadex"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						<li><a target="_blank" href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-						<li><a target="_blank" href="https://vimeo.com/"><i class="fa fa-vimeo-square" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-vimeo-square" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div class="copyright">
-			<p><a class="rovadex" href="https://rovadex.com" target="_blank">Rovadex</a> © 2019. <a href="pravicy-policy.html" target="_blank">All Rights Reserved.</a></p>
+			<p> © 2020 Мобильные соревнования Game Sparring </p>
 		</div>
 	</div>
 </footer>
 <!--===================== FOOTER END =====================-->
 
 <!--======================= TO TOP =======================-->
-<a class="to-top" href="#home">
+<a class="to-top" href="#">
 	<i class="fa fa-chevron-up" aria-hidden="true"></i>
 	<span></span>
 </a>
@@ -1480,5 +1056,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 <script src="js/scripts.js"></script>
+<script>
+	$('#exampleModal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget) // Button that triggered the modal
+		var recipient = button.data('whatever') // Extract info from data-* attributes
+		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		var modal = $(this);
+		console.log(modal);
+		modal.find('#TurnirId').val(recipient)
+	})
+</script>
 </body>
 </html>
