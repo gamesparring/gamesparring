@@ -321,7 +321,6 @@ header.header-scroll .nav-menu{
 }
 .nav-list li a{
 	font-weight: 700;
-	letter-spacing: 0.05em;
 	position: relative;
 	text-transform:uppercase;
 	line-height:19px;
@@ -529,6 +528,24 @@ header.header-scroll .logo-strong{
 	display: block;
 	max-width: 100%;
 }
+.btn-span {
+	background-color: transparent;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 45px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	border: 2px solid #45a7ef;
+	min-width: 144px;
+	padding: 0 30px;
+	position: relative;
+	color: #fff;
+	transition: all 0.3s ease-out;
+}
 .btn {
 	background-color: transparent;
 	text-transform: uppercase;
@@ -550,17 +567,17 @@ header.header-scroll .logo-strong{
 .btn:hover {
 	background-color: #45a7ef;
 }
-.btn:before{
-	content: '';
-	position: absolute;
-	width: 69px;
-	height: 1px;
-	background-color: #fff;
-	top: 50%;
-	right: -44px;
-	z-index: 1;
-	transition: all 0.3s ease-out;
-}
+/*.btn:before{*/
+/*	content: '';*/
+/*	position: absolute;*/
+/*	width: 69px;*/
+/*	height: 1px;*/
+/*	background-color: #fff;*/
+/*	top: 50%;*/
+/*	right: -44px;*/
+/*	z-index: 1;*/
+/*	transition: all 0.3s ease-out;*/
+/*}*/
 .btn:hover:before{
 	right: -80px;
 	opacity: 0;
@@ -811,6 +828,43 @@ header.header-scroll .logo-strong{
 	flex-wrap: wrap;
 	margin: 25px 0 10px;
 }
+
+.price-info-match{
+	display: flex;
+}
+
+.price-match-start{
+	width: 50%;
+	padding-left: 1%;
+	padding-right: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.PriceInfo{
+	width: 100%;
+	border: 2px solid #5f5f5f;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 0 14px;
+	transition: .3s ease;
+	cursor: default;
+}
+
+/*#Participant{*/
+/*	margin-left: 10%;*/
+/*	width: 100%;*/
+/*}*/
+/*#partic{*/
+/*	margin-left: 10%;*/
+/*}*/
 .price-info ul li{
 	border: 2px solid #5f5f5f;
 	border-radius: 4px;
@@ -1200,13 +1254,35 @@ header.header-scroll .logo-strong{
 }
 .prod-item .price .old-price{
 	color: #fff;
-	text-decoration: line-through;
-	text-decoration-color: #45a7ef;
 	margin-right: 5px;
 }
 .prod-item .btn{
 	margin-top: 41px;
 }
+.modal-content{
+	background-image: url(img/bg-body.svg);
+	background-color: #131213;
+
+}
+
+#contactform li input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li input:focus::-webkit-input-placeholder {opacity: 0.3; transition: opacity 0.3s ease;}
+#contactform li input:focus::-moz-placeholder          {opacity: 0.3; transition: opacity 0.3s ease;}
+#contactform li input:focus:-moz-placeholder           {opacity: 0.3; transition: opacity 0.3s ease;}
+#contactform li input:focus:-ms-input-placeholder      {opacity: 0.3; transition: opacity 0.3s ease;}
+
+#contactform li textarea::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li textarea::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li textarea:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li textarea:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+#contactform li textarea:focus::-webkit-input-placeholder {opacity: 0.3; transition: opacity 0.3s ease;}
+#contactform li textarea:focus::-moz-placeholder          {opacity: 0.3; transition: opacity 0.3s ease;}
+#contactform li textarea:focus:-moz-placeholder           {opacity: 0.3; transition: opacity 0.3s ease;}
+#contactform li textarea:focus:-ms-input-placeholder      {opacity: 0.3; transition: opacity 0.3s ease;}
+
 .tabs-content{
 	position: relative;
 }
@@ -1231,6 +1307,7 @@ header.header-scroll .logo-strong{
 }
 .prod-tabs{
 	display: flex;
+	justify-content: center;
 	max-width: 1260px;
 	margin: 0 auto 40px;
 }
@@ -1265,8 +1342,6 @@ header.header-scroll .logo-strong{
 .prod-link-cover li a{
 	display: block;
 	width: 40px;
-	background: #45a7ef;
-	border: 2px solid #45a7ef;
 	box-sizing: border-box;
 	box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.1);
 	line-height: 36px;
