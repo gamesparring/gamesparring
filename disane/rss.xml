@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru"
+     xmlns:media="http://search.yahoo.com/mrss/"
+     xmlns:turbo="http://turbo.yandex.ru"
+     version="2.0">
+    <channel>
+        <!-- Информация о сайте-источнике -->
+        <title>Game Sparring</title>
+        <link>https://gamesparring.xyz/</link>
+        <description>Мобильный киберспорт</description>
+        <language>ru</language>
+        <item turbo="true">
+            <!-- Информация о странице -->
+            <link>https://gamesparring.xyz/</link>
+            <turbo:source></turbo:source>
+            <turbo:topic></turbo:topic>
+            <pubDate>Tue, 21 Apr 2020 14:15:00 +0300</pubDate>
+            <author>Game Sparring</author>
+            <metrics>
+                <yandex schema_identifier="Идентификатор">
+                    <breadcrumblist>
+                        <breadcrumb url="https://gamesparring.xyz/" text="Домашняя"/>
+                    </breadcrumblist>
+                </yandex>
+            </metrics>
+            <yandex:related></yandex:related>
+            <turbo:content>
+                <![CDATA[
+                    <!-- Содержимое 1 страницы -->
+                ]]>
+            </turbo:content>
+        </item>
+    </channel>
+</rss>
