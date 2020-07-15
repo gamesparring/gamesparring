@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>Game Sparring</title>
+	<!-- =============== META =============== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link  rel = "apple-touch-icon"  sizes = "57x57"  href = "favicon/apple-icon-57x57.png" >
+	<link  rel = "apple-touch-icon"  sizes = "60x60"  href = "favicon/apple-icon-60x60.png " >
+	<link  rel = " apple-touch-icon "  sizes = " 72x72 "  href = "favicon/apple-icon-72x72.png " >
+	<link  rel = " apple-touch-icon "  sizes = "76x76"  href = "favicon/apple-icon-76x76.png" >
+	<link  rel = "apple-touch-icon "  sizes = " 114x114 "  href = "favicon/apple-icon-114x114.png ">
+	<link  rel = "apple-touch-icon"  sizes = "120x120"  href = "favicon/apple-icon-120x120.png" >
+	<link  rel = "apple-touch-icon"  sizes = "144x144"  href = "favicon/apple-icon-144x144.png " >
+	<link  rel = " apple-touch-icon "  sizes = " 152x152 "  href = "favicon/apple-icon-152x152.png " >
+	<link  rel = " apple-touch-icon "  sizes = "180x180"  href = "favicon/apple-icon-180x180.png" >
+	<link  rel = "icon"  type = "image / png"  sizes = "192x192"  href = "favicon/android-icon-192x192.png" >
+	<link  rel = "icon"  type = "image / png"  sizes = "32x32"  href = "favicon/favicon-32x32.png" >
+	<link  rel = "icon"  type = "image / png"  sizes = "96x96"  href = "favicon/favicon-96x96.png" >
+	<link  rel = "icon"  type = "image / png"  sizes = "16x16"  href = "favicon/favicon-16x16.png " >
+	<link  rel = "manifest" href = "favicon/manifest.json" >
+	<meta  name ="msapplication-TileColor"  content = "#ffffff" >
+	<meta  name = "msapplication-TileImage"  content = "favicon/ms-icon-144x144.png" >
+	<meta  name = "theme-color"  content = "#ffffff" >
+	<meta name="yandex-verification" content="40f86a811794ca6c" />
+	<meta name="yandex-verification" content="883927af52f968c7" />
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+			m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(65606800, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true
+		});
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/65606800" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<!-- =============== STYLE =============== -->
+	<link rel="stylesheet" href="css/critical.css">
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		.preloader-active .preloader-cover{
+			height: 4000px;
+			transform: translate(-50%,-50%) rotate(45deg);
+		}
+		.preloader-cover{
+			height: 0;
+			width: 4000px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) rotate(45deg);
+			background: #131213;
+			position: fixed;
+			z-index: 999;
+			overflow: hidden;
+			transition: .8s cubic-bezier(0.65, 0.05, 0.36, 1) .3s;
+			overflow: hidden;
+			will-change: top, left;
+		}
+	</style>
+</head>
+
+<body id="home" class="home preloader-active" style="background-image: url(img/bg-body.svg);">
+
+<!--=============== HEADER ===============-->
+<header class="header">
+	<div class="container">
+		<a href="#" class="nav-btn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="row align-items-center">
+			<!--=============== LOGO ===============-->
+			<div class="col-12 col-sm-6 col-lg-3 logo-item">
+				<a href="index.html" class="logo"><img src="img/logo.svg" alt="logo" ></a>
+			</div>
+			<!--============= LOGO END =============-->
+			<div class="col-6 nav-menu-cover">
+				<!--============= NAV MENU =============-->
+				<nav class="nav-menu">
+					<ul class="nav-list">
+						<li class="active">
+							<a href="index.html">ГЛАВНАЯ</a>
+						</li>
+						<li>
+							<a href="#">О НАС</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">Ещё <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							<ul>
+								<li><a href="#">Наш сервис</a></li>
+								<li><a href="#">Новости</a></li>
+								<li><a href="#">Политика конфиденциальности</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Турниры</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<!--=========== NAV MENU END ===========-->
+			</div>
+			<div class="col-12 col-sm-6 col-lg-3">
+				<!--============ HEADER ICON ============-->
+				<ul class="header-icon">
+					<li class="search">
+						<a class="icon" href="#">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</a>
+						<form action="#">
+							<input type="search" name="search" placeholder="Search">
+							<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</li>
+					<li class="favorites">
+						<a class="icon" href="#">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+							<span>2</span>
+						</a>
+					</li>
+					<li>
+						<a class="icon" href="#">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+				<!--========== HEADER ICON END ==========-->
+			</div>
+		</div>
+	</div>
+</header>
+<!--============= HEADER END =============-->
+
+<!--=============== MAIN CONTENT ===============-->
+<main>
+	<!--=============== MAIN SLIDER ===============-->
+	<section class="main-slider-cover">
+		<div class="main-slider">
+			<div class="main-slider-for">
+				<div class="main-slide-for">.
+					<picture>
+						<source srcset="img/pubg_mobile.webp" type="image/webp">
+						<img src="img/pubg_mobile.jpg" alt="Pubg mobile">
+					</picture>
+					<div class="container">
+						<div class="slide-info">
+							<h3>ПОБЕЖДАЙ В ТУРНИРАХ
+								И ЗАРАБАТЫВАЙ</h3>
+<!--							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eaque ut ad aliquam, alias voluptatem!</p>-->
+<!--							<a href="gallery.html">read more</a>-->
+						</div>
+					</div>
+				</div>
+				<div class="main-slide-for">
+					<picture>
+						<source srcset="img/pabg_mobile_two.webp" type="image/webp">
+						<img src="img/pabg_mobile_two.jpg" alt="Pubg mobile pic two">
+					</picture>
+
+					<div class="container">
+						<div class="slide-info">
+							<h3>Кооперируйтесь</h3>
+							<p>Играть с друзьями - это драйв, эмоции, удовольствие!
+
+								Приглашайте друзей по персональной ссылке и в качестве бонуса получайте кэшбек с каждого выигрыша приглашённого.</p>
+<!--							<a href="gallery.html">read more</a>-->
+						</div>
+					</div>
+				</div>
+				<div class="main-slide-for">
+					<picture>
+						<source srcset="img/pubg_retro.webp" type="image/webp">
+						<img src="img/pubg_retro.jpg" alt="Pubg retro">
+					</picture>
+					<div class="container">
+						<div class="slide-info">
+							<h3>Ранговая система</h3>
+							<p>Выше ранг - больше выплаты
+								Бонус к выплате за каждый килл</p>
+							<a href="#">Подробнее</a>
+						</div>
+					</div>
+				</div>
+				<div class="main-slide-for">
+					<picture>
+						<source srcset="img/PUBG-Mobile.webp" type="image/webp">
+						<img src="img/PUBG-Mobile.jpg" alt="">
+					</picture>
+					<div class="container">
+						<div class="slide-info">
+							<h3>Мобильная версия
+								Удобно. Стильно.</h3>
+							<p>Для Вашего комфорта была создана мобильная версия сайта с полным функционалом и приятным интерфейсом.</p>
+<!--							<a href="gallery.html">read more</a>-->
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="main-slider-nav">
+				<div class="main-slide-nav">
+					<span>1</span>
+					<div class="img-cover">
+						<picture>
+							<img src="img/pubg_mobile_mini.webp" alt="Pubg mobile mini">
+						</picture>
+					</div>
+				</div>
+				<div class="main-slide-nav">
+					<span>2</span>
+					<div class="img-cover">
+						<img src="img/pabg_mobile_mini_two.webp" alt="Pubg mobile pict two mini">
+					</div>
+				</div>
+				<div class="main-slide-nav">
+					<span>3</span>
+					<div class="img-cover">
+						<img src="img/pubg_retro_min.webp" alt="Pubg Retro">
+					</div>
+				</div>
+				<div class="main-slide-nav">
+					<span>4</span>
+					<div class="img-cover">
+						<img src="img/PUBG-Mobile-mini.webp" alt="PUBG-Mobile">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=============== MAIN SLIDER END ===============-->
+
+	<!--================= BEST PRICES =================-->
+	<section class="best-prices">
+		<div class="container s-anim">
+			<div class="row align-items-center">
+				<div class="price-img-block col-md-6">
+					<div class="price-img-cover">
+						<picture>
+							<source srcset="img/tournir.webp" type="image/webp">
+							<img class="lazy" src="img/tournir.jpg" data-src="img/best-img.jpg" alt="img">
+						</picture>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="price-info">
+						<h2 class="title-left">Ближайший турнир</h2>
+						<div class="price-info-match">
+							<div class="price-match-start">
+								<label for="MatchStart">Начало матча</label>
+								<div id="MatchStart" class="PriceInfo" >Завтра - 18:00</div>
+							</div>
+							<div class="price-match-start">
+								<label for="Participant">Участников</label>
+								<div id="Participant" class="PriceInfo" >5/100</div>
+							</div>
+						</div>
+						<p class="pt-4">ЭРАНГЕЛЬ - SOLO TPP</p>
+						<ul>
+							<li>Попади в ТОП 15 и получи +100 рублей.</li>
+						</ul>
+<!--						<div class="price">75р/КИЛЛ</div>-->
+						<div class="price">
+							<a target="_blank" href="https://www.toornament.com">
+								<img width="241" src="img/PoweredbyToor_White.png" alt="Toornament">
+							</a>
+						</div>
+						<a href="#" class="btn-span">Учавствовать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=============== BEST PRICES AND ===============-->
+
+	<!--================ GALLERY BLOCK ================-->
+	<section class="serv-block">
+		<div href="#" class="serv-block-item">
+			<span class="border-item"></span>
+			<picture>
+				<source srcset="img/t1.webp" type="image/webp">
+				<img class="lazy" src="img/t1.jpg" data-src="img/img-1.jpg" alt="img">
+			</picture>
+			<div class="serv-block-info">
+				<h4>11.07.2020 - 19:00</h4>
+				<h5>Эрангель - SQUAD TPP</h5>
+					<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t1">Учавствовать</button>
+			</div>
+		</div>
+		<a href="#" class="serv-block-item">
+			<span class="border-item"></span>
+			<picture>
+				<source srcset="img/t2.webp" type="image/webp">
+				<img class="lazy" src="img/t2.jpg" data-src="img/img-2.jpg" alt="img">
+			</picture>
+			<div class="serv-block-info">
+				<h4>11.07.2020 - 19:00</h4>
+				<h5>Эрангель - SQUAD TPP</h5>
+				<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t2">Учавствовать</button>
+			</div>
+		</a>
+		<a href="#" class="serv-block-item">
+			<span class="border-item"></span>
+			<picture>
+				<source srcset="img/t3.webp" type="image/webp">
+				<img class="lazy" src="img/t3.jpg" data-src="img/img-3.jpg" alt="img">
+			</picture>
+			<div class="serv-block-info">
+				<h4>11.07.2020 - 19:00</h4>
+				<h5>Эрангель - SQUAD TPP</h5>
+				<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t3">Учавствовать</button>
+			</div>
+		</a>
+		<a href="#" class="serv-block-item">
+			<span class="border-item"></span>
+			<picture>
+				<source srcset="img/t4.webp" type="image/webp">
+				<img class="lazy" src="img/t4.jpg" data-src="img/img-4.jpg" alt="img">
+			</picture>
+			<div class="serv-block-info">
+				<h4>11.07.2020 - 19:00</h4>
+				<h5>Эрангель - SQUAD TPP</h5>
+				<p>Попади в ТОП 5 и получи +100 рублей, для каждого игрока команды!</p>
+				<button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@t4">Учавствовать</button>
+			</div>
+		</a>
+	</section>
+	<!-- modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Зарегистрироваться</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+							<input id="TurnirId" hidden>
+						<div class="form-group">
+							<label for="NickName" class="col-form-label">Nick Name:</label>
+							<input type="text" class="form-control" id="NickName">
+						</div>
+						<div class="form-group">
+							<label for="PubgId" class="col-form-label">Pubg Id:</label>
+							<input type="text" class="form-control" id="PubgId">
+						</div>
+						<div class="form-group">
+							<label for="message-text" class="col-form-label">Message:</label>
+							<textarea class="form-control" id="message-text"></textarea>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+					<button type="button" class="btn btn-primary">Участвовать
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end modal -->
+	<!--============== GALLERY BLOCK END ==============-->
+
+	<!--==================== S-BLOG ====================-->
+	<section class="s-blog">
+		<div class="container s-anim">
+			<h2>Последние новости</h2>
+			<p class="slogan">Рады представить вам поселение новости в Pubg </p>
+			<div class="row">
+				<!--=============== POST-ITEM ===============-->
+				<div class="col-12 col-md-4 post-item">
+					<div class="prod-thumbnail">
+						<a href="#">
+							<picture>
+								<source srcset="img/n1.webp" type="image/webp">
+								<img class="lazy" src="img/n1.jpg" data-src="img/blog-img-1.jpg" alt="img">
+							</picture>
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="meta top">
+							<span class="post-by">От <a href="#">Иван Иванов</a>  /</span>
+							<span class="post-date">Сентябрь 2019</span>
+						</div>
+						<h5 class="title"><a href="#">Краткое описание/оглавление статьи
+						</a></h5>
+						<div class="meta bottom">
+								<span class="post-comments">
+									<a href="#">Комментариев 2</a>
+								</span>
+							<span class="post-tags">Тэг: <a href="#">Pubg</a></span>
+						</div>
+						<a href="#" class="btn">Просмотреть</a>
+					</div>
+				</div>
+				<!--============= POST-ITEM END =============-->
+				<!--=============== POST-ITEM ===============-->
+				<div class="col-12 col-md-4 post-item">
+					<div class="prod-thumbnail">
+						<a href="#">
+							<picture>
+								<source srcset="img/n2.webp" type="image/webp">
+								<img class="lazy" src="img/n2.jpg" data-src="img/blog-img-1.jpg" alt="img">
+							</picture>
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="meta top">
+							<span class="post-by">От <a href="#">Иван Иванов</a>  /</span>
+							<span class="post-date">Сентябрь 2019</span>
+						</div>
+						<h5 class="title"><a href="#">Краткое описание/оглавление статьи</a></h5>
+						<div class="meta bottom">
+								<span class="post-comments">
+									<a href="#">Комментариев 2</a>
+								</span>
+							<span class="post-tags">Тэг: <a href="#">Pubg </a><a href="#">Drones</a></span>
+						</div>
+						<a href="#" class="btn">Просмотреть</a>
+					</div>
+				</div>
+				<!--============= POST-ITEM END =============-->
+				<!--=============== POST-ITEM ===============-->
+				<div class="col-12 col-md-4 post-item">
+					<div class="prod-thumbnail">
+						<a href="#">
+							<picture>
+								<source srcset="img/n3.webp" type="image/webp">
+								<img class="lazy" src="img/n3.jpg" data-src="img/blog-img-1.jpg" alt="img">
+							</picture>
+						</a>
+					</div>
+					<div class="post-content">
+						<div class="meta top">
+							<span class="post-by">От <a href="#">Иван Иванов</a>  /</span>
+							<span class="post-date">Сентябрь 2019</span>
+						</div>
+						<h5 class="title"><a href="#">Краткое описание/оглавление статьи</a></h5>
+						<div class="meta bottom">
+								<span class="post-comments">
+									<a href="#">Комментариев 2</a>
+								</span>
+							<span class="post-tags">Тэг: <a href="#">Pubg, </a><a href="#">Drones</a></span>
+						</div>
+						<a href="#" class="btn">Просмотреть</a>
+					</div>
+				</div>
+				<!--============= POST-ITEM END =============-->
+			</div>
+		</div>
+	</section>
+	<!--================== S-BLOG END ==================-->
+
+<!--	&lt;!&ndash;===================== S-SHOP =====================&ndash;&gt;-->
+<!--	<section class="s-shop">-->
+<!--		<div class="container s-anim">-->
+<!--			<h2>Лучьшие игроки</h2>-->
+<!--			<p class="slogan">Топ игроков по категориям</p>-->
+<!--			&lt;!&ndash;================== TAB-WRAP ==================&ndash;&gt;-->
+<!--			<div class="tab-wrap">-->
+<!--				<ul class="tab-nav prod-tabs">-->
+<!--					<li class="item" rel="tab1">-->
+<!--						<div class="block-icon">-->
+<!--							<img src="img/sv3.svg" alt="img">-->
+<!--							<h6>Выигрыш</h6>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li class="item" rel="tab2">-->
+<!--						<div class="block-icon">-->
+<!--							<img src="img/sv.svg" alt="img">-->
+<!--							<h6>Фраги</h6>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--					<li class="item" rel="tab3">-->
+<!--						<div class="block-icon">-->
+<!--							<img src="img/match.svg" alt="img">-->
+<!--							<h6>Сыграно</h6>-->
+<!--						</div>-->
+<!--					</li>-->
+<!--				</ul>-->
+<!--				<div class="tabs-content">-->
+<!--					&lt;!&ndash;================== TAB1 ==================&ndash;&gt;-->
+<!--					<div class="tab tab1">-->
+<!--						<div class="row prod-cover">-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Заработал</span>-->
+<!--										<span class="new-price">299 &#8381;</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Заработал</span>-->
+<!--										<span class="new-price">299 &#8381;</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Заработал</span>-->
+<!--										<span class="new-price">299 &#8381;</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Заработал</span>-->
+<!--										<span class="new-price">299 &#8381;</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Заработал</span>-->
+<!--										<span class="new-price">299 &#8381;</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Заработал</span>-->
+<!--										<span class="new-price">299 &#8381;</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					&lt;!&ndash;================ TAB1 END ================&ndash;&gt;-->
+<!--					&lt;!&ndash;================== TAB2 ==================&ndash;&gt;-->
+<!--					<div class="tab tab2">-->
+<!--						<div class="row prod-cover">-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Килов</span>-->
+<!--										<span class="new-price">100</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Килов</span>-->
+<!--										<span class="new-price">100</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Килов</span>-->
+<!--										<span class="new-price">100</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Килов</span>-->
+<!--										<span class="new-price">100</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Килов</span>-->
+<!--										<span class="new-price">100</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Килов</span>-->
+<!--										<span class="new-price">100</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					&lt;!&ndash;================ TAB2 END ================&ndash;&gt;-->
+<!--					&lt;!&ndash;================== TAB3 ==================&ndash;&gt;-->
+<!--					<div class="tab tab3">-->
+<!--						<div class="row prod-cover">-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Сыграно</span>-->
+<!--										<span class="new-price">20 Игр</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Сыграно</span>-->
+<!--										<span class="new-price">20 Игр</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Сыграно</span>-->
+<!--										<span class="new-price">20 Игр</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Сыграно</span>-->
+<!--										<span class="new-price">20 Игр</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Сыграно</span>-->
+<!--										<span class="new-price">20 Игр</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--							&lt;!&ndash; prod-item &ndash;&gt;-->
+<!--							<div class="col-12 col-sm-6 col-md-4 prod-item">-->
+<!--								<div class="prod-thumbnail">-->
+<!--									<div class="prod-img">-->
+<!--										<div class="lable lable-new">new</div>-->
+<!--										<div class="lable lable-sale">sale</div>-->
+<!--										<picture>-->
+<!--											<source srcset="img/stalker.webp" type="image/webp">-->
+<!--											<img class="lazy" src="img/stalker.jpg" data-src="img/stalker.webp" alt="img">-->
+<!--										</picture>-->
+<!--										<ul class="prod-link-cover">-->
+<!--											<li><a href="#"></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--								<div class="prod-content">-->
+<!--									<h5 class="title"><a href="#">Иванов Иван</a></h5>-->
+<!--									<div class="price">-->
+<!--										<span class="old-price">Сыграно</span>-->
+<!--										<span class="new-price">20 Игр</span>-->
+<!--									</div>-->
+<!--									<a href="#" class="btn">Посмотреть</a>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							&lt;!&ndash; prod-item end &ndash;&gt;-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					&lt;!&ndash;================ TAB3 END ================&ndash;&gt;-->
+<!--				</div>-->
+<!--			</div>-->
+<!--			&lt;!&ndash;================ TAB-WRAP END ================&ndash;&gt;-->
+<!--		</div>-->
+<!--	</section>-->
+<!--	&lt;!&ndash;=================== S-SHOP END ===================&ndash;&gt;-->
+
+
+	<!--=================== S-CONTACTS ===================-->
+	<section class="s-contacts s-main-contacts">
+		<div class="container s-anim">
+			<h2>КОНТАКТЫ</h2>
+			<form id='contactform' action="php/contact.php" name="contactform">
+				<ul class="form-cover">
+					<li class="inp-name"><input id="name" type="text" name="your-name" placeholder="Имя"></li>
+					<li class="inp-phone"><input id="phone" type="tel" name="your-phone" placeholder="Телефон"></li>
+					<li class="inp-email"><input id="email" type="email" name="your-email" placeholder="E-mail"></li>
+					<li class="inp-text"><textarea id="comments" name="your-text" placeholder="Сообщение"></textarea></li>
+				</ul>
+				<div class="btn-form-cover">
+					<button id="#submit" type="submit" class="btn">Отправить</button>
+				</div>
+			</form>
+			<div id="message"></div>
+		</div>
+	</section>
+	<!--================= S-CONTACTS END =================-->
+</main>
+<!--================== MAIN CONTENT END ==================-->
+
+<!--======================= FOOTER =======================-->
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6 col-lg-3 footer-info">
+				<h5>О НАС</h5>
+				<p>Game Sparring – киберспортивный проект, на острие мобильных соревнований!</p>
+			</div>
+			<div class="col-6 col-sm-4 col-lg-2 blok-link">
+				<h5>ТУРНИР</h5>
+				<ul>
+					<li><a href="#">Турнир 1</a></li>
+					<li><a href="#">Турнир 2</a></li>
+					<li><a href="#">Турнир 3</a></li>
+					<li><a href="#">Турнир 4</a></li>
+				</ul>
+			</div>
+			<div class="col-6 col-sm-4 col-lg-2 blok-link">
+				<h5>НОВОСТИ</h5>
+				<ul>
+					<li><a href="#">Новость 1</a></li>
+					<li><a href="#">Новость 2</a></li>
+					<li><a href="#">Новость 3</a></li>
+					<li><a href="#">Новость 4</a></li>
+				</ul>
+			</div>
+			<div class="col-12 col-sm-4 col-lg-2 blok-link">
+				<h5>Поддержка</h5>
+				<ul>
+					<li><a href="#">Help</a></li>
+					<li><a href="#">Документация</a></li>
+					<li><a href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="footer-bottom">
+			<div class="row align-items-center">
+				<div class="col-12 col-md-3">
+					<a href="index.html" class="logo footer-logo"><img src="img/logo.svg" alt="logo"></a>
+				</div>
+				<div class="col-12 col-md-6">
+					<ul class="footer-menu">
+						<li><a href="index.html">ГЛАВНАЯ</a></li>
+						<li><a href="#">О НАС</a></li>
+						<li><a href="#">Турниры</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col-12 col-md-3">
+					<ul class="soc-link">
+						<li><a target="_blank" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+						<li><a target="_blank" href="#"><i class="fa fa-vimeo-square" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<p> © 2020 Мобильные соревнования Game Sparring </p>
+		</div>
+	</div>
+</footer>
+<!--===================== FOOTER END =====================-->
+
+<!--======================= TO TOP =======================-->
+<a class="to-top" href="#">
+	<i class="fa fa-chevron-up" aria-hidden="true"></i>
+	<span></span>
+</a>
+<!--===================== TO TOP END =====================-->
+
+<!--=============== TEMPLATE SCRIPT ===============-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+	$('#exampleModal').on('show.bs.modal', function (event) {
+		var button = $(event.relatedTarget) // Button that triggered the modal
+		var recipient = button.data('whatever') // Extract info from data-* attributes
+		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+		var modal = $(this);
+		console.log(modal);
+		modal.find('#TurnirId').val(recipient)
+	})
+</script>
+</body>
+</html>
