@@ -83,6 +83,7 @@
         <!--	</div>-->
         <div class="container p-md-25">
             <ul class="tournaments-list">
+                @foreach($tournaments as $tournament)
                 <li class="tournament-item hvr-float-shadow">
                     <div class="game-wrapper">
                         <a href="/find-tournaments/pubg-mobile-tournaments" class="game-info ">
@@ -93,14 +94,13 @@
                         </a>
                         <div class="country-flag">
                             <img class="country-icon" src="https://cdn.game.tv/locales/OT.png">
-                            <p class="country-name">EN</p>
+                            <p class="country-name">{{$tournament->t_map}}</p>
                         </div>
                     </div>
                     <div class="game-banner-wrapper">
                         <a href="/ru/tournaments/gang-of-gamers's-PUBG-Mobile-tournament-0210-2338--0e08aab2cf3d4df399bfacf8b3ca1981" class="game-banner btn-track-join-now" data-eventname="join_tournament_clicked" data-gameid="-pubg-mobile" data-gamename="PUBG MOBILE">
                             <figure class="tournament-image  banner-wrapper">
-                                <img data-src="https://cdn.game.tv/game-tv-content/images_3/676560b6897f7b09be8fd26c3d02b83e/676560b6897f7b09be8fd26c3d02b83e/01.jpg" class="img-responsive banner-image loadded unblur" alt="PUBG MOBILE" src="https://cdn.game.tv/game-tv-content/images_3/676560b6897f7b09be8fd26c3d02b83e/676560b6897f7b09be8fd26c3d02b83e/01.jpg">
-                                <img src="https://cdn.game.tv/game-tv-content/images_2/default/game_logo/en/676560b6897f7b09be8fd26c3d02b83e.png" class="icon-image" alt="PUBG MOBILE">
+                                <img class="img-responsive banner-image loadded unblur" alt="PUBG MOBILE" src="{{ Voyager::image($tournament->thumbnail('medium')) }}">
                             </figure>
                             <div class="bg-gradient"></div>
                         </a>
@@ -110,105 +110,27 @@
                             <div class="platform-details">
                                 <p class="platform">ПЛАТФОРМА</p>
                                 <span class="platform-icon web"></span>
-                                <p class="discord-title">web</p>
-                                <p class="versus">100</p>
+                                <p class="discord-title">mobile</p>
+                                <p class="versus">{{$tournament->t_mode_type}}</p>
                             </div>
-                            <h3 class="game-title">gang of gamers's PUBG Mobile tournament 02/10-23:38</h3>
+                            <p>Участников: {{$tournament->users()->count()}}/100, {{$tournament->t_payment}}Р/kill, участие: {{$tournament->t_price}}Р </p>
+                            <h3 class="game-title">{{$tournament->t_name}}</h3>
                             <div class="joining-info" data-date="2020-10-02T17:53:00+00:00">
                                 <div class="joining-info-content">
-                                    <p class="join-date">2 Oct 2020</p>
-                                    <p class="join-time">20:53 <span class="add-timezoneAbbr">MSK</span></p>
+                                    <p class="join-date">{{$tournament->normalizeDate()}}</p>
+                                    <p class="join-time">{{$tournament->normalizeTime()}} <span class="add-timezoneAbbr">MSK</span></p>
                                 </div>
-
-                                <span class="join-now">ПРИСОЕДИНИТЬСЯ</span>
+                                @if($tournament->users()->count() < 100)
+                                    <span class="join-now">ПРИСОЕДИНИТЬСЯ</span>
+                                    @else
+                                    <span class="join-now">ПРИСОЕДИНИТЬСЯ</span>
+                                    @endif
                             </div>
                         </a>
                     </div>
                 </li>
-                <li class="tournament-item hvr-float-shadow">
-                    <div class="game-wrapper">
-                        <a href="/find-tournaments/pubg-mobile-tournaments" class="game-info ">
-                            <div class="game-icon">
-                                <img data-src="https://cdn.game.tv/game-tv-content/images_2/default/game_icons/676560b6897f7b09be8fd26c3d02b83e/en/676560b6897f7b09be8fd26c3d02b83e.png" class="img-responsive lazy" alt="PUBG MOBILE">
-                            </div>
-                            <span class="game-name">PUBG MOBILE</span>
-                        </a>
-                        <div class="country-flag">
-                            <img class="country-icon" src="https://cdn.game.tv/locales/IN.png">
-                            <p class="country-name">EN</p>
-                        </div>
-                    </div>
-                    <div class="game-banner-wrapper">
-                        <a href="/ru/tournaments/「PMCW」Registration--1996a57a33dc42e58ac913cd101b63b2" class="game-banner btn-track-join-now" data-eventname="join_tournament_clicked" data-gameid="-pubg-mobile" data-gamename="PUBG MOBILE">
-                            <figure class="tournament-image  banner-wrapper">
-                                <img data-src="https://cdn.game.tv/game-tv-content/images_3/676560b6897f7b09be8fd26c3d02b83e/676560b6897f7b09be8fd26c3d02b83e/02.jpg" class="img-responsive banner-image loadded unblur" alt="PUBG MOBILE" src="https://cdn.game.tv/game-tv-content/images_3/676560b6897f7b09be8fd26c3d02b83e/676560b6897f7b09be8fd26c3d02b83e/02.jpg">
-                                <img src="https://cdn.game.tv/game-tv-content/images_2/default/game_logo/en/676560b6897f7b09be8fd26c3d02b83e.png" class="icon-image" alt="PUBG MOBILE">
-                            </figure>
-                            <div class="bg-gradient"></div>
-                        </a>
-                    </div>
-                    <div class="tournament-details">
-                        <a href="/ru/tournaments/「PMCW」Registration--1996a57a33dc42e58ac913cd101b63b2" class="btn-track-join-now" data-eventname="join_tournament_clicked" data-gameid="-pubg-mobile" data-gamename="PUBG MOBILE">
-                            <div class="platform-details">
-                                <p class="platform">ПЛАТФОРМА</p>
-                                <span class="platform-icon discord"></span>
-                                <p class="discord-title">discord</p>
-                                <p class="versus">Squad</p>
-                            </div>
-                            <h3 class="game-title">「PMCW」Registration</h3>
-                            <div class="joining-info" data-date="2020-09-05T06:30:00+00:00">
-                                <div class="joining-info-content">
-                                    <p class="join-date">5 Sep 2020</p>
-                                    <p class="join-time">9:30 <span class="add-timezoneAbbr">MSK</span></p>
-                                </div>
+                @endforeach
 
-                                <span class="join-now">ПРИСОЕДИНИТЬСЯ</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="tournament-item hvr-float-shadow">
-                    <div class="game-wrapper">
-                        <a href="/find-tournaments/pubg-mobile-tournaments" class="game-info ">
-                            <div class="game-icon">
-                                <img data-src="https://cdn.game.tv/game-tv-content/images_2/default/game_icons/676560b6897f7b09be8fd26c3d02b83e/en/676560b6897f7b09be8fd26c3d02b83e.png" class="img-responsive lazy" alt="PUBG MOBILE">
-                            </div>
-                            <span class="game-name">PUBG MOBILE</span>
-                        </a>
-                        <div class="country-flag">
-                            <img class="country-icon" src="https://cdn.game.tv/locales/IN.png">
-                            <p class="country-name">EN</p>
-                        </div>
-                    </div>
-                    <div class="game-banner-wrapper">
-                        <a href="/ru/tournaments/「PMCW」Register-here--eff791bad109462da0e185055a1a5a3e" class="game-banner btn-track-join-now" data-eventname="join_tournament_clicked" data-gameid="-pubg-mobile" data-gamename="PUBG MOBILE">
-                            <figure class="tournament-image  banner-wrapper">
-                                <img data-src="https://cdn.game.tv/game-tv-content/images_3/676560b6897f7b09be8fd26c3d02b83e/676560b6897f7b09be8fd26c3d02b83e/03.jpg" class="img-responsive banner-image loadded unblur" alt="PUBG MOBILE" src="https://cdn.game.tv/game-tv-content/images_3/676560b6897f7b09be8fd26c3d02b83e/676560b6897f7b09be8fd26c3d02b83e/03.jpg">
-                                <img src="https://cdn.game.tv/game-tv-content/images_2/default/game_logo/en/676560b6897f7b09be8fd26c3d02b83e.png" class="icon-image" alt="PUBG MOBILE">
-                            </figure>
-                            <div class="bg-gradient"></div>
-                        </a>
-                    </div>
-                    <div class="tournament-details">
-                        <a href="/ru/tournaments/「PMCW」Register-here--eff791bad109462da0e185055a1a5a3e" class="btn-track-join-now" data-eventname="join_tournament_clicked" data-gameid="-pubg-mobile" data-gamename="PUBG MOBILE">
-                            <div class="platform-details">
-                                <p class="platform">ПЛАТФОРМА</p>
-                                <span class="platform-icon discord"></span>
-                                <p class="discord-title">discord</p>
-                                <p class="versus">Squad</p>
-                            </div>
-                            <h3 class="game-title">「PMCW」Register here</h3>
-                            <div class="joining-info" data-date="2020-09-05T06:30:00+00:00">
-                                <div class="joining-info-content">
-                                    <p class="join-date">5 Sep 2020</p>
-                                    <p class="join-time">9:30 <span class="add-timezoneAbbr">MSK</span></p>
-                                </div>
-
-                                <span class="join-now">ПРИСОЕДИНИТЬСЯ</span>
-                            </div>
-                        </a>
-                    </div>
-                </li>
             </ul>
         </div>
         <div class="container">
