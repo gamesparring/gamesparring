@@ -2,6 +2,7 @@
 
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
+use Carbon\Carbon;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,8 @@ use Illuminate\Support\Facades\Artisan;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+Artisan::command('activate_at', function () {
+    \DB::table('posts')->where('status', 'PENDING')->where('activate_at', '<=', Carbon::now())->update(array('status' => 'PUBLISHED'));
+})->describe('Display an inspiring quote');
+
