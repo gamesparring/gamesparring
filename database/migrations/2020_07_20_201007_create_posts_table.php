@@ -31,7 +31,7 @@ class CreatePostsTable extends Migration
             $table->string('youtube')->nullable();
             $table->enum('preview', ['IMAGE', 'YOUTUBE'])->default('IMAGE');
             $table->string('original_link')->nullable();
-            $table->date('activate_at')->nullable();
+            $table->dateTime('activate_at')->nullable();
             $table->integer('total_like')->default(null);
             $table->softDeletes();
             $table->timestamps();
@@ -60,7 +60,6 @@ class CreatePostsTable extends Migration
         DB::statement("ALTER TABLE posts DROP COLUMN searchtext");
         Schema::table('posts', function (Blueprint $table) {
             $table->dropForeign('posts_author_id_foreign');
-            $table->dropForeign('posts_type_news_id_foreign');
         });
         Schema::drop('posts');
     }

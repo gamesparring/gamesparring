@@ -222,65 +222,17 @@
                     </a>
                 </div>
                 <div class="news-content">
-                    <a href="">
+                    @foreach($posts as $post)
+                    <a href="{{route('post.show',$post->slug)}}">
                         <div class="news-card">
-                            <div class="card-image" style="background-image: url('https://images.prismic.io/liguefrlol/c5c2db4b-2356-4e2d-a0e1-d93c81a484e3_whitesite.jpg?auto=compress,format&amp;rect=0,0,823,361&amp;w=823&amp;h=361')"></div>
+                            <div class="card-image" style="background-image: url({{ Voyager::image($post->thumbnail('medium')) }})" ></div>
                             <div class="card-content">
-                                <div class="card-date">17 мая 2020</div>
-                                <div class="card-title">Новость 1</div>
+                                <div class="card-date">{{$post->createdAtFormated()}}</div>
+                                <div class="card-title">{{$post->title}}</div>
                             </div>
                         </div>
                     </a>
-
-                    <a href="">
-                        <div class="news-card">
-                            <div class="card-image" style="background-image: url('https://images.prismic.io/liguefrlol/ca5823db-f4a6-48a9-b11b-8c5a8f6eaf86_recap%5Elfl.jpg?auto=compress,format&amp;rect=0,0,823,361&amp;w=823&amp;h=361')"></div>
-                            <div class="card-content">
-                                <div class="card-date">9 мая 2020</div>
-                                <div class="card-title">Новость 2</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="">
-                        <div class="news-card">
-                            <div class="card-image" style="background-image: url('https://images.prismic.io/liguefrlol/735a6eff-7831-44c8-9458-50d613f39fcb_lfl-european-masters.jpg?auto=compress,format&amp;rect=0,0,823,361&amp;w=823&amp;h=361')"></div>
-                            <div class="card-content">
-                                <div class="card-date">22 мая 2020</div>
-                                <div class="card-title">Новость 3</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="/articles/lfl-lequipe-type-de-glopo-pour-la-saison">
-                        <div class="news-card">
-                            <div class="card-image" style="background-image: url('https://images.prismic.io/liguefrlol/79852832-d43f-4a92-af37-2d8e7d677f1f_Equipe-type-LFL-de-la-saison.jpg?auto=compress,format&amp;rect=0,0,823,361&amp;w=823&amp;h=361')"></div>
-                            <div class="card-content">
-                                <div class="card-date">16 мая 2020</div>
-                                <div class="card-title">Новость 4</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="/articles/interview--decay-le-midlaner-des-misfits-premier">
-                        <div class="news-card">
-                            <div class="card-image" style="background-image: url('https://images.prismic.io/liguefrlol/8309269e-3a2a-4e53-b5b9-8dc17daaf4bf_LFL-interview-Decay.jpg?auto=compress,format&amp;rect=0,0,823,361&amp;w=823&amp;h=361')"></div>
-                            <div class="card-content">
-                                <div class="card-date">5 мая 2020</div>
-                                <div class="card-title">Новость 5</div>
-                            </div>
-                        </div>
-                    </a>
-
-                    <a href="/articles/guide-de-zoe-par-ldlc-ol-vetheo">
-                        <div class="news-card">
-                            <div class="card-image" style="background-image: url('https://images.prismic.io/liguefrlol/1aa959e5-3eca-434e-bd39-aa5823f35dd2_zoe-vto-lfl.jpg?auto=compress,format&amp;rect=19,0,823,361&amp;w=823&amp;h=361')"></div>
-                            <div class="card-content">
-                                <div class="card-date">3 мая 2020</div>
-                                <div class="card-title">Новость 6</div>
-                            </div>
-                        </div>
-                    </a>
+                @endforeach
 
 
                 </div>
