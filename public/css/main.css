@@ -378,7 +378,7 @@ iframe {
  *
  *
  * @author Olivier Paradis <oparadis@oxent.net>
- * @date   05/02/2016 
+ * @date   05/02/2016
  */
 /**
  * Grid flex configuration
@@ -390,8 +390,40 @@ iframe {
  *
  *
  * @author Olivier Paradis <oparadis@oxent.net>
- * @date   05/02/2016 
+ * @date   05/02/2016
  */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменить цвет выпадающих ссылок при наведении */
+.dropdown-content a:hover {
+    background-color: #181818;
+}
+
+/* Показать выпадающее меню при наведении */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 2px;
+    border-color: #f3cd59;
+    background: black;
+    margin-top: 10px;
+}
+
+/* Изменить цвет фона выпадающего кнопка при отображении выпадающего списка */
 .grid-flex {
   display: -webkit-box;
   display: -moz-box;
@@ -7477,7 +7509,31 @@ a {
     transform: rotate(360deg); } }
 
 @media (min-width: 992px){
-  .p-md-25{
-    padding: 25px;
-  }
+      .p-md-25{
+        padding: 25px;
+      }
+}
+@media (max-width: 992px){
+    .dropdown-contents {
+        display: none;
+        border-radius: 2px;
+        border-color: #f3cd59;
+        background: black;
+        margin-top: 10px;
+    }
+    .dropdown-content-mobile {
+        display: block;
+        border-radius: 2px;
+
+        margin-top: 10px;
+    }
+}
+
+.ul-top-menu li a{
+    display: block;
+    color: unset;
+}
+.ul-top-menu li a:hover{
+    color: #f1e6d2;
+    text-decoration: none;
 }

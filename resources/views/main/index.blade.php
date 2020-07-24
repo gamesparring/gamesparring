@@ -139,13 +139,13 @@
                     <div class="news-title"><h2
                             class="title">Свежие новости</h2>
                     </div>
-                    <a href="">
+                    <a href="{{ route('articles') }}">
                         <div class="decorated-button">Все  новости</div>
                     </a>
                 </div>
                 <div class="news-content">
                     @foreach($posts as $post)
-                    <a href="{{route('post.show',$post->slug)}}">
+                    <a href="{{route('articles.show',$post->slug)}}">
                         <div class="news-card">
                             <div class="card-image" style="background-image: url({{ Voyager::image($post->thumbnail('medium')) }})" ></div>
                             <div class="card-content">
@@ -159,7 +159,7 @@
 
                 </div>
                 <div class="news-footer">
-                    <a href="/articles">
+                    <a href="{{ route('articles') }}">
                         <div class="decorated-button">Все &#039;новости</div>
                     </a>
                 </div>

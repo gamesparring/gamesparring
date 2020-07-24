@@ -12,6 +12,8 @@ class PageController extends Controller
     {
         $tournaments        = Tournament::latest()->limit(3)->get();
         $posts              = Post::where('status', 'PUBLISHED')->where('featured', true)->whereNotNull('image')->orderBy('id', 'DESC')->limit(6)->get();
+
+
         return view('main.index',compact('posts','tournaments'));
     }
 }

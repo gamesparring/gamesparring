@@ -36,7 +36,7 @@
                     </div>
                     <div class="opponent opponent-2">
                         <div class="name neutral" style="text-align: center">
-                            Счет 1
+                            {{ __('Count 1') }}
                         </div>
                     </div>
                 </div>
